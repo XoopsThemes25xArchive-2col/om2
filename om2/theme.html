@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<a style="color:#FFFFFF" href="http://www.osgamer.org">osgamer</a><a style="color:#FFFFFF" href="http://www.omnetwork.net">omnetwork.net</a><br />
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="mainTable">
+  <tr>
+    <td height="100">&nbsp;</td>
+    <td height="100"><table width="100%" height="100" border="0" cellpadding="0" cellspacing="0" class="upperDeco">
+      <tr>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#E0E0E0">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td bgcolor="#E0E0E0">&nbsp;</td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="f2f2f2">&nbsp;</td>
+        <td bgcolor="#E0E0E0">&nbsp;</td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+    </table></td>
+    <td height="100">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td bgcolor="#E0E0E0" class="mainContainer" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%"><img src="themes/<{$xoops_theme}>/header.jpg" width="400" height="200" /></td>
+            <td width="50%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+              <tr>
+                <td class="headerText"><p><span class="styleTitle">Your Company name </span><br />
+                  <span class="sloganStyle">here comes slogan </span></p>
+                  </td>
+              </tr>
+            </table>
+              <table border="0" cellpadding="5" cellspacing="0" class="upperDeco">
+                <tr>
+                  <td class="headerText"><p>01</p>
+                    <p>About us</p></td>
+                  <td class="headerText"><p>02</p>
+                    <p>Services</p></td>
+                  <td class="headerText"><p>03</p>
+                    <p>Team</p></td>
+                  <td class="headerText"><p>04</p>
+                    <p>Contact</p></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="beliOkvir"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="leftColumn"><{if $xoops_showlblock == 1}> 
+<{foreach item=block from=$xoops_lblocks}> <{include file="$xoops_theme/theme_blockleft.html"}> &nbsp; <{/foreach}> 
+<{/if}>&nbsp;</td>
+                <td valign="top" class="centralColumn"><table class="100width" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><{if $xoops_clblocks}> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/theme_blockcenter_l.html"}>&nbsp; <{/foreach}> 
+<{/if}></td>
+                    <td class="BlockDivider" valign="top">&nbsp;</td>
+                    <td valign="top"><{if $xoops_crblocks}> 
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/theme_blockcenter_r.html"}>&nbsp; <{/foreach}> 
+<{/if}></td>
+                    </tr>
+                  <tr>
+                    <td class="contentBox" colspan="3" valign="top"><{if $xoops_contents}> 
+<{$xoops_contents}>
+<{/if}></td>
+                    </tr>
+                  <tr>
+                    <td colspan="3" valign="top"><{if $xoops_ccblocks}> 
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/theme_blockcenter_c.html"}> <{/foreach}> 
+<{/if}> </td>
+                  </tr>
+                  <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}> 
+				  <tr>
+                    <td valign="top"><{foreach from=$xoBlocks.page_bottomleft item=block}> <{include file="$xoops_theme/theme_blockcenter_l.html"}> &nbsp;<{/foreach}> 
+&nbsp;</td>
+                    <td class="BlockDivider" valign="top">&nbsp;</td>
+                    <td valign="top"><{foreach from=$xoBlocks.page_bottomright item=block}> <{include file="$xoops_theme/theme_blockcenter_r.html"}>&nbsp; <{/foreach}> &nbsp;</td>
+                  </tr>
+				  <{/if}> 
+                </table>&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+    </table></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><table width="100%" height="100" border="0" cellpadding="0" cellspacing="0" class="upperDeco">
+      <tr>
+        <td bgcolor="#f2f2f2">&nbsp;</td>
+        <td bgcolor="#f2f2f2">&nbsp;</td>
+        <td bgcolor="#E0E0E0">&nbsp;</td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#F2F2F2">&nbsp;</td>
+        <td bgcolor="#E0E0E0">&nbsp;</td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#F2F2F2">&nbsp;</td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br />
+design by <a href="http://www.omnetwork.net">omnetwork.net</a> 
+</body>
+</html>
